@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Modal } from "@tui-react/modal";
-
+import { MobileInputLocation } from "./MobileInputLocation";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,6 +20,8 @@ function App() {
         <button className="open-modal-button" onClick={openModal}>
           Open Modal
         </button>
+
+        <MobileInputLocation opened={isModalOpen} setOpened={setIsModalOpen} />
       </header>
       <div className="App-body">
         <div className="scrollable-content">
@@ -37,36 +39,6 @@ function App() {
           ))}
         </div>
       </div>
-
-      <Modal open={isModalOpen}>
-        <Modal.Content
-          dataQaType="mobileExpandableField"
-          disableAnimation={false}
-          size="fullscreen"
-          zIndex={2200}
-        >
-            <div className="modal-header">
-              <h2>Full Screen Modal <input type='text'></input></h2>
-              <button className="close-button" onClick={closeModal}>×</button>
-            </div>
-            <div className="modal-body">
-              <div className="modal-scrollable-content">
-                {/* Adding scrollable content inside the modal */}
-                {[...Array(100)].map((_, i) => (
-                  <div key={i} className="modal-content-item">
-                    <h3>Modal Content Item {i + 1}</h3>
-                    <p>
-                      This is content inside the modal. This area also has its own scrolling behavior. 
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-        </Modal.Content>
-      </Modal>
     </div>
   );
 }
