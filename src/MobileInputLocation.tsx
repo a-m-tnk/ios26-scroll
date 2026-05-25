@@ -10,7 +10,7 @@ import { TuiIconTdsMediumMagnifier } from '@tui-react/proprietary-icons';
 
 import { useInputLocation } from './hooks/useInputLocation';
 import overrideStyles from './overrideDropdownStyles.css';
-import { MobileExpandableField } from './MobileExpandableField/MobileExpandableField';
+import { MobileExpandableField } from './MobileExpandableField';
 import { SearchFieldIconWrapper } from './SearchFieldIconWrapper/SearchFieldIconWrapper';
 
 import { useLocationDropdownMaxHeight } from './hooks/useLocationDropdownMaxHeight';

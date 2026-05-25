@@ -8,7 +8,7 @@ import TuiIconTdsServiceCross from '@tui-react/proprietary-icons/dist/svg/tuiIco
 
 import { Icon } from './Icon/Icon';
 import { ThemeWrapper } from './ThemeWrapper/ThemeWrapper';
-import { useIOSScrollReset } from './useIOSScrollReset';
+import { useIOSScrollReset } from './hooks/useIOSScrollReset';
 
 import styles from './MobileExpandableField.css';
 import classnames from 'classnames';
