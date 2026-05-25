@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/ios26-scroll/static/css/main.8ebcfdd7.css",
-    "main.js": "/ios26-scroll/static/js/main.444ed3e2.js",
+    "main.css": "/ios26-scroll/static/css/main.230141f0.css",
+    "main.js": "/ios26-scroll/static/js/main.9b15c975.js",
     "static/js/453.fd73299d.chunk.js": "/ios26-scroll/static/js/453.fd73299d.chunk.js",
+    "static/media/clearfield-ios.svg": "/ios26-scroll/static/media/clearfield-ios.a423b50951cd8374ed31b80cc6cbf039.svg",
+    "static/media/tuiIconTdsMediumUserMale.svg": "/ios26-scroll/static/media/tuiIconTdsMediumUserMale.50ed286c7f435ec73f381cbff9804fa8.svg",
+    "static/media/tuiIconTdsSmallQuestionCircle.svg": "/ios26-scroll/static/media/tuiIconTdsSmallQuestionCircle.23651215c828584fd5127a274101f072.svg",
     "index.html": "/ios26-scroll/index.html",
-    "main.8ebcfdd7.css.map": "/ios26-scroll/static/css/main.8ebcfdd7.css.map",
-    "main.444ed3e2.js.map": "/ios26-scroll/static/js/main.444ed3e2.js.map",
+    "static/media/tuiIconTdsSmallLock.svg": "/ios26-scroll/static/media/tuiIconTdsSmallLock.662a45562de1978c89c24e2b037fd6d5.svg",
+    "static/media/tuiIconTdsSmallPragmaticCross.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticCross.85efa22c916be27017db774193a217aa.svg",
+    "static/media/tuiIconTdsServiceCross.svg": "/ios26-scroll/static/media/tuiIconTdsServiceCross.2525cfaf045c7630992c1663329b8e99.svg",
+    "static/media/tuiIconTdsMediumPragmaticCheck.svg": "/ios26-scroll/static/media/tuiIconTdsMediumPragmaticCheck.3fa9ae5f2466185e75254fcd8b61c7db.svg",
+    "static/media/tuiIconTdsSmallPragmaticCheck.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticCheck.cfe5f7459db2403698d9239729679475.svg",
+    "static/media/tuiIconTdsMediumPragmaticMinus.svg": "/ios26-scroll/static/media/tuiIconTdsMediumPragmaticMinus.ff31bfa465e7f555c989df42629c0679.svg",
+    "static/media/tuiIconTdsSmallPragmaticMinus.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticMinus.decc0d9b91ee9bb1e8e86c17455cb116.svg",
+    "main.230141f0.css.map": "/ios26-scroll/static/css/main.230141f0.css.map",
+    "main.9b15c975.js.map": "/ios26-scroll/static/js/main.9b15c975.js.map",
     "453.fd73299d.chunk.js.map": "/ios26-scroll/static/js/453.fd73299d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ebcfdd7.css",
-    "static/js/main.444ed3e2.js"
+    "static/css/main.230141f0.css",
+    "static/js/main.9b15c975.js"
   ]
 }
