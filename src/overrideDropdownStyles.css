@@ -1,0 +1,116 @@
+html {
+    .groupTitle {
+        padding: 20px 0 12px;
+        color: var(--tui-text-primary);
+        font: var(--tui-font-heading-mobile-m);
+
+        @media (--media-desktop-s) {
+            padding: 12px 20px;
+            font: var(--tui-font-heading-6);
+        }
+    }
+
+    .group {
+        margin-top: 0 !important;
+        padding-top: 0;
+        box-shadow: none;
+
+        &:first-child {
+            .groupTitle {
+                padding-top: 16px;
+            }
+        }
+
+        @media (--media-desktop-s) {
+            padding-bottom: 8px;
+            max-width: 442px;
+
+            &:last-child {
+                padding-bottom: 12px;
+            }
+        }
+
+        &::before {
+            display: none !important;
+        }
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    .sideContent_left {
+        align-self: flex-start;
+        margin-top: 8px !important;
+        margin-right: 16px !important;
+
+        path {
+            fill: currentColor;
+        }
+    }
+
+    .item {
+        align-items: center;
+        margin: 0 !important;
+        padding: 0;
+
+        @media (--media-desktop-s) {
+            padding: 0 16px 0 20px;
+        }
+    }
+
+    .content {
+        row-gap: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .title,
+    .description {
+        display: -webkit-box;
+        overflow: hidden;
+        white-space: pre-wrap;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .title {
+        font: var(--tui-font-text-ui-mobile-l);
+
+        @media (--media-desktop-s) {
+            font: var(--tui-font-text-ui-m);
+        }
+    }
+
+    .customContent {
+        height: 100%;
+    }
+
+    /* stylelint-disable-next-line selector-class-pattern */
+    .customContent_loader {
+        display: block;
+        padding: 28px 20px;
+    }
+
+    .dropdownList {
+        padding: 0 !important;
+        border: none;
+        border-radius: 0 !important;
+        box-shadow: none;
+
+        @media (--media-desktop-s) {
+            width: max-content;
+            border: 1px solid var(--tui-border-normal);
+            border-radius: 12px !important;
+            box-shadow: 0 8px 16px rgb(51 51 51 / 0.2);
+        }
+    }
+
+    .dropdownList [class*='contentWrapper'] {
+        /* С n-ной версии scroll-блока min-width=content-fit, что нас не устраивает */
+        min-width: 0;
+    }
+
+    /* Скрываем скроллбар — не нужен визуально в мобильном модале */
+    .dropdownList [data-qa-type='uikit/scroll-bar'] {
+        display: none !important;
+        pointer-events: none;
+    }
+}

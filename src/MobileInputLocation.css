@@ -1,0 +1,58 @@
+.root {
+    [data-qa-type="mobileInputLocation.inputBox"] {
+        padding: 16px 12px;
+        border-radius: 16px;
+    }
+
+    [data-qa-type="mobileInputLocation.inputBox.inputContainer"],
+    [data-qa-type="mobileInputLocation.value.text"],
+    [data-qa-type="mobileInputLocation.value.placeholder"]  {
+        height: 20px;
+    }
+
+    [data-qa-type="mobileInputLocation.inputBox.leftContent"] {
+        margin-right: 8px;
+    }
+
+    [data-qa-type="mobileInputLocation.value.placeholder"] {
+        vertical-align: top;
+    }
+
+    div[data-qa-type="mobileInputLocation.value.placeholder.wrapper"] div,
+    div[data-qa-type="mobileInputLocation.value.placeholder.wrapper"] > span
+    {
+        color: var(--tui-text-secondary);
+        font-family: var(--tui-ios-text-font);
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+
+    }
+
+    [data-qa-type="mobileInputLocation.value.input"] {
+        height: 20px;
+        font-family: var(--tui-ios-text-font);
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+.inputWrapper {
+    padding: 16px 0 12px;
+}
+
+.loader {
+    padding-top: 24px;
+    text-align: center;
+}
+
+/* iphone only */
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-tui-platform — глобальный платформенный атрибут TUI на корневом элементе */
+[data-tui-platform="ios"] {
+    .root {
+        [data-qa-type="mobileInputLocation.inputBox.cleanButton"] {
+            color: var(--tui-text-secondary);
+        }
+    }
+}

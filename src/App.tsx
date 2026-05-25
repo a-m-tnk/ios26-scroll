@@ -1,20 +1,12 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import scrollLock from 'scroll-lock';
-import { BottomSheet } from "@tui-react/bottom-sheet";
+import React, { useState } from "react";
+import "./App.css";
 import { Modal } from "@tui-react/modal";
 
-//Get the element that should scroll when page scrolling is disabled
-const $scrollableElement = document.querySelector('.App-body');
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
-    scrollLock.disablePageScroll();
-    // disablePageScroll($scrollableElement as any);
-
     setIsModalOpen(true);
   };
 
@@ -36,24 +28,29 @@ function App() {
             <div key={i} className="content-item">
               <h3>Content Item {i + 1}</h3>
               <p>
-                This is some sample content to demonstrate scrolling. Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                This is some sample content to demonstrate scrolling. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
               </p>
             </div>
           ))}
         </div>
       </div>
-      
-      {isModalOpen && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+
+      <Modal open={isModalOpen}>
+        <Modal.Content
+          dataQaType="mobileExpandableField"
+          disableAnimation={false}
+          size="fullscreen"
+          zIndex={2200}
+        >
             <div className="modal-header">
               <h2>Full Screen Modal <input type='text'></input></h2>
               <button className="close-button" onClick={closeModal}>×</button>
             </div>
-            <div className="modal-body" data-scroll-lock-scrollable>
-              <div className="modal-scrollable-content" data-scroll-lock-scrollable>
+            <div className="modal-body">
+              <div className="modal-scrollable-content">
                 {/* Adding scrollable content inside the modal */}
                 {[...Array(100)].map((_, i) => (
                   <div key={i} className="modal-content-item">
@@ -68,9 +65,8 @@ function App() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      )}
+        </Modal.Content>
+      </Modal>
     </div>
   );
 }

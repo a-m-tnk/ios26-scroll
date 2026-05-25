@@ -129,6 +129,7 @@ select {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
+  max-height: 400px;
 }
 
 .modal-scrollable-content {

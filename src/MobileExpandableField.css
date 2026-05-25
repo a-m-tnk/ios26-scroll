@@ -1,0 +1,100 @@
+.modalContentSafePadding {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: var(--color-white);
+}
+
+.headerWrapper {
+    display: flex;
+    flex: 0 1 24px;
+    align-items: center;
+    padding: 10px 8px;
+}
+
+.contentWrapper {
+    flex: 1 0 auto;
+    padding: 0 16px;
+}
+
+.footerWrapper {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    padding: 16px 16px 24px;
+}
+
+.headerTitle {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font: var(--tui-font-heading-mobile-m);
+}
+
+.cross {
+    position: absolute;
+}
+
+.darkTheme {
+    background: var(--tui-background-elevation-1);
+    color: var(--color-native-light-blue);
+}
+
+/* Desktop (Win/Mac) and Mobile Android */
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-tui-platform — глобальный платформенный атрибут TUI на корневом элементе */
+[data-tui-platform='desktop'] {
+    .container {
+        [data-qa-type='mobileInputLocationExpandableField.inputBox.cleanButton'] > span {
+            color: var(--tui-text-secondary-on-light);
+        }
+    }
+}
+
+/* iphone only */
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-tui-platform — глобальный платформенный атрибут TUI на корневом элементе */
+[data-tui-platform='ios'] {
+    .container {
+        [data-qa-type='mobileInputLocationExpandableField.inputBox.cleanButton'] > span {
+            color: var(--tui-text-secondary);
+        }
+    }
+}
+
+/* чтоб растянуть содержимое на всю высоту шторки */
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-qa-type уникален для этого компонента */
+[data-qa-type='mobileExpandableField.content'],
+[data-qa-type='mobileExpandableField'] {
+    display: flex;
+
+    /* чтобы длинный текст обрезался, скрывался под многоточием */
+    flex-direction: column;
+}
+
+/* удаляем ненужный отступ чтобы увеличить область для прокрутки внутреннего скролла в модалке */
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-qa-type уникален для этого компонента */
+[data-qa-type='mobileExpandableField.content'] {
+    margin-bottom: 0 !important;
+}
+
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-qa-type уникален для этого компонента */
+[data-qa-type='mobileExpandableField.dialogLayout'] {
+    /* удаляем ненужные горизонтальные китовые отступы (у нас там свои есть) */
+    padding: 0 !important;
+
+    /* чтобы прибить футер шторки к низу  */
+    height: 100%;
+}
+
+/* dark theme (when app inside webview) */
+:global(.isDarkTheme) {
+    .container {
+        [data-qa-type='mobileInputLocationExpandableField.inputBox.cleanButton'] > span {
+            color: var(--tui-text-secondary);
+        }
+    }
+}

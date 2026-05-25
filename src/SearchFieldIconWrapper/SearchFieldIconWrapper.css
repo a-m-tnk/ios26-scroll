@@ -1,0 +1,22 @@
+/* Desktop (Win/Mac) and Mobile Android */
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-tui-platform — глобальный платформенный атрибут TUI на корневом элементе */
+[data-tui-platform="desktop"] {
+    .root {
+        color: var(--tui-text-tertiary-on-light);
+    }
+}
+
+/* iphone only */
+/* stylelint-disable-next-line local/scope-top-level-selectors -- data-tui-platform — глобальный платформенный атрибут TUI на корневом элементе */
+[data-tui-platform="ios"] {
+    .root {
+        color: var(--tui-text-secondary);
+    }
+}
+
+/* dark theme (when app inside webview) */
+:global(.isDarkTheme) {
+    .root {
+        color: var(--tui-text-tertiary-on-dark);
+    }
+}
