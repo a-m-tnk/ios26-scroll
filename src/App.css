@@ -63,6 +63,13 @@
   background-color: #21a9c7;
 }
 
+/* Fix for iPhone zooming issue on input focus */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
 /* Modal Styles */
 .modal-overlay {
   position: fixed;
