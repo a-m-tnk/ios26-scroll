@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# TUI React Sandbox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Песочница для воспроизведения и отладки багов TUI React компонентов (в основном Safari).
 
-## Available Scripts
+## Описание
 
-In the project directory, you can run:
+Этот проект используется для изоляции и тестирования багов, связанных с React-компонентами TUI. Основная цель — воспроизведение проблем в минимальной среде для последующего анализа и исправления.
+
+## Ветки и баги
+
+### `test-safari-scroll` (август 2025)
+Баг скролла шторки (bottom sheet) в Safari. Проблема с прокруткой содержимого внутри компонента bottom sheet.
+
+### Ветка шторки (весна 2026)
+Баги компонента bottom sheet:
+- Проблемы с drag-поведением
+- Неправильная работа prevent-touch-scroll
+- Другие проблемы взаимодействия с тач-интерфейсами в Safari
+
+## Технологии
+
+- React
+- @tui-react/bottom-sheet
+- Create React App
+
+## Доступные скрипты
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Запуск приложения в режиме разработки. Откройте [http://localhost:3000](http://localhost:3000) для просмотра.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Запуск тестов в интерактивном режиме.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Сборка приложения для продакшена в папку `build`.
 
 ### `npm run eject`
+**Внимание: это необратимая операция!** Удаляет зависимость Create React App и копирует все конфигурационные файлы в проект.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Как использовать
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Клонируйте репозиторий
+2. Установите зависимости: `npm install`
+3. Переключитесь на нужную ветку для воспроизведения конкретного бага
+4. Запустите: `npm start`
+5. Откройте в Safari (iOS/macOS) для воспроизведения багов
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Структура
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src/` — исходный код приложения
+- `node_modules/@tui-react/bottom-sheet/` — компонент bottom sheet для отладки
