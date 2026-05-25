@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import scrollLock from 'scroll-lock';
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
+//Get the element that should scroll when page scrolling is disabled
+const $scrollableElement = document.querySelector('.App-body');
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
     scrollLock.disablePageScroll();
+    // disablePageScroll($scrollableElement as any);
+
     setIsModalOpen(true);
   };
 
@@ -46,8 +51,8 @@ function App() {
               <h2>Full Screen Modal <input type='text'></input></h2>
               <button className="close-button" onClick={closeModal}>×</button>
             </div>
-            <div className="modal-body">
-              <div className="modal-scrollable-content">
+            <div className="modal-body" data-scroll-lock-scrollable>
+              <div className="modal-scrollable-content" data-scroll-lock-scrollable>
                 {/* Adding scrollable content inside the modal */}
                 {[...Array(100)].map((_, i) => (
                   <div key={i} className="modal-content-item">
