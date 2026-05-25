@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import scrollLock from 'scroll-lock';
-import { disablePageScroll, enablePageScroll } from 'scroll-lock';
+import { BottomSheet } from "@tui-react/bottom-sheet";
+import { Modal } from "@tui-react/modal";
 
 //Get the element that should scroll when page scrolling is disabled
 const $scrollableElement = document.querySelector('.App-body');
