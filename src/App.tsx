@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import scrollLock from 'scroll-lock';
+
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
+    scrollLock.disablePageScroll();
     setIsModalOpen(true);
   };
 
@@ -40,7 +43,7 @@ function App() {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
-              <h2>Full Screen Modal</h2>
+              <h2>Full Screen Modal <input type='text'></input></h2>
               <button className="close-button" onClick={closeModal}>×</button>
             </div>
             <div className="modal-body">
