@@ -21,6 +21,7 @@
     "@tui-react/modal": "1.140.4",
     "@tui-react/dialog-layout": "0.176.7",
     "@platform-ui/dropdown": "12.255.0",
+    "@platform-ui/input": "12.255.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
