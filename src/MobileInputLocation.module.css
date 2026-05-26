@@ -56,3 +56,13 @@
         }
     }
 }
+
+
+.scroll {
+    scrollbar-width: none;
+    box-sizing: initial;
+    height: 100%;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+}

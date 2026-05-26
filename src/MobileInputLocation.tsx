@@ -14,7 +14,7 @@ import { DropdownListCustom } from './DropdownListCustom';
 
 import { useLocationDropdownMaxHeight } from './hooks/useLocationDropdownMaxHeight';
 
-import styles from './MobileInputLocation.css';
+import styles from './MobileInputLocation.module.css';
 
 export const INPUT_LOCATION_PLACEHOLDER = 'Направление или отель';
 
@@ -134,14 +134,16 @@ export const MobileInputLocation: FC<{
                 </div>
 
                 {!isLoading && !noResults && (
-                    <DropdownListCustom
-                        opened
-                        minWidth={325}
-                        maxHeight={dropdownMaxHeight}
-                        options={suggestions}
-                        size="l"
-                        onOptionClick={handleOptionClick}
-                    />
+                    <div data-attr="Scroll" className={styles.scroll}>
+                        <DropdownListCustom
+                            opened
+                            minWidth={325}
+                            maxHeight={dropdownMaxHeight}
+                            options={suggestions}
+                            size="l"
+                            onOptionClick={handleOptionClick}
+                        />
+                    </div>
                 )}
 
                 <Placeholder isLoading={isLoading} noResults={noResults && searchValue.length > 1} />

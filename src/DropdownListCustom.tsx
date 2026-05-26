@@ -3,7 +3,7 @@ import React from 'react';
 
 import type { GroupOption, SingleOption } from '@platform-ui/dropdown/types';
 
-import styles from './DropdownListCustom.css';
+import styles from './DropdownListCustom.module.css';
 
 interface DropdownListCustomProps {
     opened: boolean;
