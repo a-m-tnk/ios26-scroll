@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ios26-scroll/static/css/main.230141f0.css",
-    "main.js": "/ios26-scroll/static/js/main.551df657.js",
+    "main.css": "/ios26-scroll/static/css/main.1b68a330.css",
+    "main.js": "/ios26-scroll/static/js/main.42a8bf7f.js",
     "static/js/453.fd73299d.chunk.js": "/ios26-scroll/static/js/453.fd73299d.chunk.js",
     "static/media/clearfield-ios.svg": "/ios26-scroll/static/media/clearfield-ios.a423b50951cd8374ed31b80cc6cbf039.svg",
     "static/media/tuiIconTdsMediumUserMale.svg": "/ios26-scroll/static/media/tuiIconTdsMediumUserMale.50ed286c7f435ec73f381cbff9804fa8.svg",
@@ -14,12 +14,12 @@
     "static/media/tuiIconTdsSmallPragmaticCheck.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticCheck.cfe5f7459db2403698d9239729679475.svg",
     "static/media/tuiIconTdsMediumPragmaticMinus.svg": "/ios26-scroll/static/media/tuiIconTdsMediumPragmaticMinus.ff31bfa465e7f555c989df42629c0679.svg",
     "static/media/tuiIconTdsSmallPragmaticMinus.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticMinus.decc0d9b91ee9bb1e8e86c17455cb116.svg",
-    "main.230141f0.css.map": "/ios26-scroll/static/css/main.230141f0.css.map",
-    "main.551df657.js.map": "/ios26-scroll/static/js/main.551df657.js.map",
+    "main.1b68a330.css.map": "/ios26-scroll/static/css/main.1b68a330.css.map",
+    "main.42a8bf7f.js.map": "/ios26-scroll/static/js/main.42a8bf7f.js.map",
     "453.fd73299d.chunk.js.map": "/ios26-scroll/static/js/453.fd73299d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.230141f0.css",
-    "static/js/main.551df657.js"
+    "static/css/main.1b68a330.css",
+    "static/js/main.42a8bf7f.js"
   ]
 }
