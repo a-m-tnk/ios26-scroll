@@ -1,0 +1,141 @@
+.dropdownList {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-y: auto;
+
+    @media (--media-desktop-s) {
+        width: max-content;
+        border: 1px solid var(--tui-border-normal);
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgb(51 51 51 / 0.2);
+    }
+}
+
+.group {
+    margin-top: 0;
+    padding-top: 0;
+    box-shadow: none;
+
+    &:first-child {
+        .groupTitle {
+            padding-top: 16px;
+        }
+    }
+
+    @media (--media-desktop-s) {
+        padding-bottom: 8px;
+        max-width: 442px;
+
+        &:last-child {
+            padding-bottom: 12px;
+        }
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.groupTitle {
+    padding: 20px 0 12px;
+    color: var(--tui-text-primary);
+    font: var(--tui-font-heading-mobile-m);
+
+    @media (--media-desktop-s) {
+        padding: 12px 20px;
+        font: var(--tui-font-heading-6);
+    }
+}
+
+.groupContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    @media (--media-desktop-s) {
+        padding: 0 16px 0 20px;
+    }
+
+    &:hover {
+        background-color: var(--tui-background-hover);
+    }
+
+    &:active {
+        background-color: var(--tui-background-pressed);
+    }
+}
+
+.leftContent {
+    align-self: flex-start;
+    margin-top: 8px;
+    margin-right: 16px;
+
+    path {
+        fill: currentColor;
+    }
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    flex: 1;
+    min-width: 0;
+}
+
+.title,
+.description {
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: pre-wrap;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.title {
+    font: var(--tui-font-text-ui-mobile-l);
+    color: var(--tui-text-primary);
+
+    @media (--media-desktop-s) {
+        font: var(--tui-font-text-ui-m);
+    }
+}
+
+.description {
+    font: var(--tui-font-text-mobile-s);
+    color: var(--tui-text-secondary);
+
+    @media (--media-desktop-s) {
+        font: var(--tui-font-text-s);
+    }
+}
+
+.rightContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

@@ -2,16 +2,15 @@ import type { FC } from 'react';
 import { useRef } from 'react';
 import React from 'react';
 
-import { DropdownList } from '@platform-ui/dropdown';
 import type { SingleOption, Value } from '@platform-ui/dropdown/types';
 import Input from '@platform-ui/input';
 import type { InputOnCleanEvent } from '@platform-ui/input/types';
 import { TuiIconTdsMediumMagnifier } from '@tui-react/proprietary-icons';
 
 import { useInputLocation } from './hooks/useInputLocation';
-import overrideStyles from './overrideDropdownStyles.css';
 import { MobileExpandableField } from './MobileExpandableField';
 import { SearchFieldIconWrapper } from './SearchFieldIconWrapper/SearchFieldIconWrapper';
+import { DropdownListCustom } from './DropdownListCustom';
 
 import { useLocationDropdownMaxHeight } from './hooks/useLocationDropdownMaxHeight';
 
@@ -135,17 +134,13 @@ export const MobileInputLocation: FC<{
                 </div>
 
                 {!isLoading && !noResults && (
-                    <DropdownList
+                    <DropdownListCustom
                         opened
                         minWidth={325}
                         maxHeight={dropdownMaxHeight}
                         options={suggestions}
                         size="l"
                         onOptionClick={handleOptionClick}
-                        // TODO: Секретный и ненадежный проп, удалить, когда появится альтернатива https://jira.tcsbank.ru/browse/UIKIT-4445
-                        __overrideStyles={{
-                            Dropdown: overrideStyles,
-                        }}
                     />
                 )}
 
