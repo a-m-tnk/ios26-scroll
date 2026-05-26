@@ -22,6 +22,16 @@ function App() {
         </header>
         <div className="Page">
           <div className="pageComponentBase">
+              <div className="content-item">
+                <h3>Пельмени со скидкой 10%</h3>
+                <p>
+                  This is some sample content to demonstrate scrolling. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris.
+                </p>
+              </div>
             <div className="content-item">
               <h3>Content Item 0</h3>
               <p>
