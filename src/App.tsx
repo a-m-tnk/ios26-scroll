@@ -17,14 +17,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <button className="open-modal-button" onClick={openModal}>
-          Open Modal
-        </button>
-
-        <MobileInputLocation opened={isModalOpen} setOpened={setIsModalOpen} />
+        <h1>React App</h1>
       </header>
       <div className="App-body">
         <div className="scrollable-content">
+          <div className="content-item">
+            <h3>Content Item 0</h3>
+            <p>
+              <MobileInputLocation
+                opened={isModalOpen}
+                setOpened={setIsModalOpen}
+              />
+            </p>
+          </div>
           {/* Adding a lot of content to make it scrollable */}
           {[...Array(50)].map((_, i) => (
             <div key={i} className="content-item">
