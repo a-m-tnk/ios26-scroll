@@ -27,7 +27,7 @@ export const DropdownListCustom: FC<DropdownListCustomProps> = ({
     return (
         <div
             className={styles.dropdownList}
-            style={{ maxHeight: `${maxHeight}px`, margin: '10px' }}
+            style={{ maxHeight: `${maxHeight}px`, margin: '0 10px' }}
             data-qa-type="dropdownListCustom"
         >
             {options.map((group, groupIndex) => (

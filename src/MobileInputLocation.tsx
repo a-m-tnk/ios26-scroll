@@ -115,7 +115,7 @@ export const MobileInputLocation: FC<{
             />
 
             <MobileExpandableField opened={opened} title={INPUT_LOCATION_PLACEHOLDER} onClose={handleClose}>
-                {/* <div className={styles.inputWrapper}>
+                <div className={styles.inputWrapper}>
                     <Input
                         dataQaType="mobileInputLocationExpandableField"
                         ellipsis
@@ -130,7 +130,7 @@ export const MobileInputLocation: FC<{
                         onClean={onClean}
                         maxLength={50}
                     />
-                </div> */}
+                </div>
 
                 {!isLoading && !noResults && (
                     <div data-attr="Scroll" className={styles.scroll}>
