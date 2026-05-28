@@ -18,7 +18,7 @@ function App() {
     <div className="application">
       <div className="Layout">
         <header className="header">
-          <h1>React App v1</h1>
+          <h1>React App v2</h1>
         </header>
         <div className="Page">
           <div className="pageComponentBase">
