@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ios26-scroll/static/css/main.81691971.css",
-    "main.js": "/ios26-scroll/static/js/main.c6424b56.js",
+    "main.js": "/ios26-scroll/static/js/main.2c9f74ae.js",
     "static/js/453.fd73299d.chunk.js": "/ios26-scroll/static/js/453.fd73299d.chunk.js",
     "static/media/clearfield-ios.svg": "/ios26-scroll/static/media/clearfield-ios.a423b50951cd8374ed31b80cc6cbf039.svg",
     "static/media/tuiIconTdsMediumUserMale.svg": "/ios26-scroll/static/media/tuiIconTdsMediumUserMale.50ed286c7f435ec73f381cbff9804fa8.svg",
@@ -11,11 +11,11 @@
     "static/media/tuiIconTdsSmallPragmaticCross.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticCross.85efa22c916be27017db774193a217aa.svg",
     "static/media/tuiIconTdsSmallPragmaticCheck.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticCheck.cfe5f7459db2403698d9239729679475.svg",
     "main.81691971.css.map": "/ios26-scroll/static/css/main.81691971.css.map",
-    "main.c6424b56.js.map": "/ios26-scroll/static/js/main.c6424b56.js.map",
+    "main.2c9f74ae.js.map": "/ios26-scroll/static/js/main.2c9f74ae.js.map",
     "453.fd73299d.chunk.js.map": "/ios26-scroll/static/js/453.fd73299d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81691971.css",
-    "static/js/main.c6424b56.js"
+    "static/js/main.2c9f74ae.js"
   ]
 }
