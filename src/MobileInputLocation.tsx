@@ -16,8 +16,7 @@ import { useLocationDropdownMaxHeight } from './hooks/useLocationDropdownMaxHeig
 
 import styles from './MobileInputLocation.module.css';
 
-export const INPUT_LOCATION_PLACEHOLDER = 'Направление или отель';
-
+export const INPUT_LOCATION_PLACEHOLDER = 'Направление';
 
 const Placeholder = ({ isLoading, noResults }: { isLoading: boolean; noResults: boolean }) => {
     if (isLoading) {
@@ -116,7 +115,7 @@ export const MobileInputLocation: FC<{
             />
 
             <MobileExpandableField opened={opened} title={INPUT_LOCATION_PLACEHOLDER} onClose={handleClose}>
-                <div className={styles.inputWrapper}>
+                {/* <div className={styles.inputWrapper}>
                     <Input
                         dataQaType="mobileInputLocationExpandableField"
                         ellipsis
@@ -131,7 +130,7 @@ export const MobileInputLocation: FC<{
                         onClean={onClean}
                         maxLength={50}
                     />
-                </div>
+                </div> */}
 
                 {!isLoading && !noResults && (
                     <div data-attr="Scroll" className={styles.scroll}>
