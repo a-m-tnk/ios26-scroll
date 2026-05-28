@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ios26-scroll/static/css/main.4a6533de.css",
-    "main.js": "/ios26-scroll/static/js/main.505c03ef.js",
+    "main.css": "/ios26-scroll/static/css/main.81691971.css",
+    "main.js": "/ios26-scroll/static/js/main.c6424b56.js",
     "static/js/453.fd73299d.chunk.js": "/ios26-scroll/static/js/453.fd73299d.chunk.js",
     "static/media/clearfield-ios.svg": "/ios26-scroll/static/media/clearfield-ios.a423b50951cd8374ed31b80cc6cbf039.svg",
     "static/media/tuiIconTdsMediumUserMale.svg": "/ios26-scroll/static/media/tuiIconTdsMediumUserMale.50ed286c7f435ec73f381cbff9804fa8.svg",
@@ -9,14 +9,13 @@
     "index.html": "/ios26-scroll/index.html",
     "static/media/tuiIconTdsSmallLock.svg": "/ios26-scroll/static/media/tuiIconTdsSmallLock.662a45562de1978c89c24e2b037fd6d5.svg",
     "static/media/tuiIconTdsSmallPragmaticCross.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticCross.85efa22c916be27017db774193a217aa.svg",
-    "static/media/tuiIconTdsServiceCross.svg": "/ios26-scroll/static/media/tuiIconTdsServiceCross.2525cfaf045c7630992c1663329b8e99.svg",
     "static/media/tuiIconTdsSmallPragmaticCheck.svg": "/ios26-scroll/static/media/tuiIconTdsSmallPragmaticCheck.cfe5f7459db2403698d9239729679475.svg",
-    "main.4a6533de.css.map": "/ios26-scroll/static/css/main.4a6533de.css.map",
-    "main.505c03ef.js.map": "/ios26-scroll/static/js/main.505c03ef.js.map",
+    "main.81691971.css.map": "/ios26-scroll/static/css/main.81691971.css.map",
+    "main.c6424b56.js.map": "/ios26-scroll/static/js/main.c6424b56.js.map",
     "453.fd73299d.chunk.js.map": "/ios26-scroll/static/js/453.fd73299d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a6533de.css",
-    "static/js/main.505c03ef.js"
+    "static/css/main.81691971.css",
+    "static/js/main.c6424b56.js"
   ]
 }
